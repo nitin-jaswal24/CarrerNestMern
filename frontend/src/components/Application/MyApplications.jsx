@@ -76,7 +76,7 @@ const MyApplications = () => {
           {applications.length <= 0 ? (
             <>
               {" "}
-              <h4 className="flex">No Applications Found</h4>{" "}
+              <h1 className="flex font-serif" style={{'margin':'12px auto','fontSize':'45px'}}>No Applications Found</h1>{" "}
             </>
           ) : (
             applications.map((element) => {

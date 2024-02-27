@@ -1351,8 +1351,8 @@ nav .hamburger {
 }
 .resume-modal .modal-content .close {
   position: absolute;
-  right: 36px;
-  top: 35px;
+  right: 546px;
+  top: 130px;
   font-size: 50px;
   color: #d9534f;
 }
@@ -1360,7 +1360,7 @@ nav .hamburger {
   cursor: pointer;
 }
 .resume-modal .modal-content img {
-  max-width: 550px;
+  max-width: 300px;
   height: auto;
 }
 @media (max-width: 1130px) {

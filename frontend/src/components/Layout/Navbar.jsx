@@ -106,7 +106,7 @@ const Navbar = () => {
     <nav className={isAuthorized ? "navbarShow fixed" : "navbarHide"}>
       <div className="container">
         <div className="logo">
-        <a href="/"><img src="/images/logofinal.png" alt="logo" /></a>  
+        <a href="/"><img src="./images/logofinal.png" alt="logo" /></a>  
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>
