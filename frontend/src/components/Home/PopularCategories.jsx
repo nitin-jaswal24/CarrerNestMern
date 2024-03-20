@@ -62,6 +62,7 @@ const PopularCategories = () => {
     },
   ];
 
+  
   return (
     <div className='categories'>
       <h3>Popular categories</h3>
@@ -71,7 +72,7 @@ const PopularCategories = () => {
             return(
               <div className="card" key={element.id}>
                 <div className='icon'>{element.icon}</div>
-                <div className="text">
+                <div className="text" >
                   <p>{element.title}</p>
                   <p>{element.subTitle}</p>
                   

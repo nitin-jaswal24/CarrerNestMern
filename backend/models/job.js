@@ -10,7 +10,7 @@ const jobSchema = new mongoose.Schema({
   description: {
     type: String,
     required: [true, "Please provide decription."],
-    minLength: [30, "Description must contain at least 30 Characters!"],
+    minLength: [10, "Description must contain at least 30 Characters!"],
     maxLength: [500, "Description cannot exceed 500 Characters!"],
   },
   category: {
@@ -31,7 +31,7 @@ const jobSchema = new mongoose.Schema({
     // minLength: [10, "Location must contian at least 20 characters!"],
   },
   fixedSalary: {
-    type: String,
+    type: Number,
     // minLength: [4, "Salary must contain at least 4 digits"],
     // maxLength: [9, "Salary cannot exceed 9 digits"],
   },

@@ -143,9 +143,9 @@ const JobSeekerCard = ({ element, deleteApplication, openModal }) => {
         </div>
         <div className="resume">
           <img
-            src={element.resume.url}
+            src={element?.resume?.url}
             alt="resume"
-            onClick={() => openModal(element.resume.url)}
+            onClick={() => openModal(element?.resume?.url)}
           />
         </div>
         <div className="btn_area">
@@ -181,9 +181,9 @@ const EmployerCard = ({ element, openModal }) => {
         </div>
         <div className="resume">
           <img
-            src={element.resume.url}
+            src={element?.resume?.url}
             alt="resume"
-            onClick={() => openModal(element.resume.url)}
+            onClick={() => openModal(element?.resume?.url)}
           />
         </div>
       </div>

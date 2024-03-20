@@ -13,12 +13,7 @@ const HeroSection = () => {
           subTitle: "Live Job",
           icon: <FaSuitcase />,
         },
-        {
-          id: 2,
-          title: "91220",
-          subTitle: "Companies",
-          icon: <FaBuilding />,
-        },
+      
         {
           id: 3,
           title: "2,34,200",
