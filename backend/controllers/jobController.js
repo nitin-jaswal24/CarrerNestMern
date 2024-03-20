@@ -35,6 +35,7 @@ export const postJob = catchAsyncError(async (req, res, next) => {
     return next(new ErrorHandler("Please provide full job details.", 400));
   }
 
+
   if ((!salaryFrom || !salaryTo) && !fixedSalary) {
     return next(
       new ErrorHandler(
@@ -42,6 +43,14 @@ export const postJob = catchAsyncError(async (req, res, next) => {
         400
       )
     );
+  }
+  if(salaryFrom>salaryTo){
+    return next(
+      new ErrorHandler(
+        "Make sure that salary range is correct.",
+        400
+      )
+    )
   }
 
   if (salaryFrom && salaryTo && fixedSalary) {

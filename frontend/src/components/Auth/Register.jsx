@@ -53,7 +53,7 @@ const Register = () => {
       <section className="authPage">
         <div className="container">
           <div className="header">
-            <img src="../../../public/images/logofinal.png" alt="logo" />
+            <img src="images/logofinal.png" alt="logo" />
             <h3>Create a new account</h3>
           </div>
           <form>
@@ -123,7 +123,7 @@ const Register = () => {
           </form>
         </div>
         <div className="banner">
-          <img src="/register.png" alt="login" />
+          {/* <img src="/register.png" alt="login" /> */}
         </div>
       </section>
     </>

@@ -76,7 +76,7 @@ const MyApplications = () => {
           {applications.length <= 0 ? (
             <>
               {" "}
-              <h4 className="flex">No Applications Found</h4>{" "}
+              <h1 className="flex font-serif" style={{'margin':'12px auto','fontSize':'45px'}}>No Applications Found</h1>{" "}
             </>
           ) : (
             applications.map((element) => {
@@ -143,9 +143,9 @@ const JobSeekerCard = ({ element, deleteApplication, openModal }) => {
         </div>
         <div className="resume">
           <img
-            src={element.resume.url}
+            src={element?.resume?.url}
             alt="resume"
-            onClick={() => openModal(element.resume.url)}
+            onClick={() => openModal(element?.resume?.url)}
           />
         </div>
         <div className="btn_area">
@@ -181,9 +181,9 @@ const EmployerCard = ({ element, openModal }) => {
         </div>
         <div className="resume">
           <img
-            src={element.resume.url}
+            src={element?.resume?.url}
             alt="resume"
-            onClick={() => openModal(element.resume.url)}
+            onClick={() => openModal(element?.resume?.url)}
           />
         </div>
       </div>

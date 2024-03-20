@@ -13,7 +13,33 @@ import { errorMiddleware } from './middlewares/error.js'
 // import bcrypt from 'brcypt'
 
 const app=express()
- 
+import multer from 'multer'
+// import { Resume } from './models/Resume.js'
+// const storage = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//       cb(null, './files')
+//     },
+//     filename: function (req, file, cb) {
+//       const uniqueSuffix = Date.now();
+//       cb(null, uniqueSuffix + file.originalname)
+//     }
+//   })
+  
+//   const upload = multer({ storage: storage })
+
+// app.post("/upload-files",upload.single("file"),async(req,res)=>{
+//      const fileName=req.file.fileName;
+//      try{
+//         await Resume.create({
+//             pdf:fileName
+//         })
+//      }catch(err){
+//         console.log(err);
+//      }
+//     console.log(req.file);
+// })
+
+
 app.use(cors({
     origin:process.env.FRONTEND_URL ,
     methods:['GET','POST','DELETE','PUT'],

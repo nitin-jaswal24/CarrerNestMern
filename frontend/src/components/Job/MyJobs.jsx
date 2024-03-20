@@ -207,7 +207,7 @@ const MyJobs = () => {
                             Salary:{" "}
                             {element.fixedSalary ? (
                               <input
-                                type="text"
+                                type="number"
                                 disabled={
                                   editingMode !== element._id ? true : false
                                 }

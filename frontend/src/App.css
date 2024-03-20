@@ -72,12 +72,16 @@ p {
   }
 }
 
+
+
+
 .authPage {
   display: flex;
   min-width: 1500px;
   max-width: 1500px;
   margin: 0 auto;
   min-height: 100vh;
+  
 }
 
 .authPage .container {
@@ -97,9 +101,9 @@ p {
   font-size: 1.6rem;
 }
 .authPage .container .header img {
-  width: 300px;
-  height: 120px;
-  margin: 0 auto;
+  width: 284px;
+  height: 104px;
+  margin: 7px 4px;
 }
 .authPage .container .header {
   text-align: center;
@@ -199,13 +203,15 @@ p {
 .footerShow {
   background: #18191c;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 25px 120px;
   align-items: center;
+  gap: 62px;
+
 }
 .footerShow div {
   display: flex;
-  gap: 12px;
+  gap: 1px;
   font-size: 16px;
   color: #f1f3f6;
 }
@@ -1351,8 +1357,8 @@ nav .hamburger {
 }
 .resume-modal .modal-content .close {
   position: absolute;
-  right: 36px;
-  top: 35px;
+  right: 546px;
+  top: 130px;
   font-size: 50px;
   color: #d9534f;
 }
@@ -1360,7 +1366,7 @@ nav .hamburger {
   cursor: pointer;
 }
 .resume-modal .modal-content img {
-  max-width: 550px;
+  max-width: 300px;
   height: auto;
 }
 @media (max-width: 1130px) {
